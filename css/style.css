@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+body{
+    margin: 0;
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    background-color: black;
+    height: 3rem;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav__link{
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.toggle__container{
+    display: none;
+}
+
+/* Hero */
+.hero__container{
+    color: black;
+}
+.hero__content_container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+.hero__text_container{
+    flex: 1;
+}
+.hero__image_container{
+    flex: 1;
+    display: grid;
+    place-items: center;
+    background-image: url('../media/hero__img.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+.hero__title{
+    font-size: 5rem;
+}
+.hero__title > span{
+    color: orangered;
+    display: block;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 10;
+}
+.hero__image{
+    width: 100%;
+    max-height: 100vh;
+    padding-top: 3rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* About */
+
+.about__content_container{
+    min-height: calc(100vh - 6.5rem);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about__heading{
+    font-size: 3rem;
+    color: black;
+}
+/* work */
+.work__container{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.work__heading{
+    font-size: 3rem;
+}
+.work__content_container {
+    min-height: calc(100vh - 6.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+.work__card {
+    flex: 1;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(255, 69, 0, 0.1);
+    padding: 1rem;
+    min-width: 300px;
+    max-width: 500px;
+}
+.work__card-image_container {
+    border: 1px solid orangered;
+    display: grid;
+    place-items: center;
+}
+.work__card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.work__card-title{
+    font-size: 1.5rem;
+}
+.work__card-text{
+    font-size: 1.2rem;
+}
+.work__card-btn{
+    background-color: orangered;
+    padding: 0.5rem 1.2rem;
+    width: fit-content;
+    color: whitesmoke;
+}
+
+/* Contact */
+
+.contact__container{
+    color: black;
+}
+.contact__heading{
+    font-size: 3rem;
+}
+.contact__content_container{
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    min-height: calc(100vh - 6rem);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact__input-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.send__btn{
+    background-color: orangered;
+    border: none;
+    padding: .5rem 1.25rem;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    min-height: 300px;
+}
+.footer__content_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+}
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer__socials_svg{
+    width: 50px;
+    color: whitesmoke;
+    background-color: antiquewhite;
+}
+.footer__content_left{
+    flex: 50%;
+}
+.footer__content_right{
+    flex: 50%;
+}
+.footer__copyright{
+    text-align: center;
+}
