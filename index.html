@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
     <title>SFG WEB DESIGN</title>
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="navbar__container">
             <div class="logo__container">
-                SFG WEB DESIGN
+               <a href="#top">SFG WEB DESIGN</a> 
             </div>
             <nav class="nav__container">
                 <ul class="nav__list">
-                    <li>
-                        <a class="nav__link" href="#home">Home</a>
-                    </li>
                     <li>
                         <a class="nav__link" href="#about">About</a>
                     </li>
@@ -30,7 +30,8 @@
                 </ul>
             </nav>
             <div class="toggle__container">
-                <img class="toggle__icon" src="./media/grid-sharp.svg" alt="toggle icon">
+                <!-- <img class="toggle__icon" src="./media/grid-sharp.svg" alt="toggle icon"> -->
+                <ion-icon class="toggle__icon" name="grid"></ion-icon>
             </div>
         </div>
     </header>
@@ -46,14 +47,27 @@
     </section>
     <main>
         <section class="about__container"  id="about">
-            <h2 class="about__heading">About</h2>
-            <div class="about__content_container">
-                <div class="about__text_container">
-                    <h2 class="about__title">
-                       Get Out Of The Box?
-                    </h2>
+            <div class="page-container">
+                <div class="page-scroller">
+
+                    <div class="page" id="page-1">
+                        <div class="page-elements">
+                            <img
+            src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=1200"
+            alt="">
+                        </div> 
+                    </div>
+                    <div class="page" id="page-2">
+                        <div class="page-elements">
+                            <h2 class="">
+                                page 2
+                            </h2>
+                        </div>
+                    </div> 
+
                 </div>
             </div>
+
         </section>
         <section class="work__container" id="work">
             <h2 class="work__heading">Our Work</h2>

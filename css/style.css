@@ -20,6 +20,7 @@ img{
 }
 
 ul{
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -29,22 +30,28 @@ a{
 }
 header{
     background-color: black;
-    height: 3rem;
     z-index: 1000;
     position: fixed;
     width: 100%;
 }
 .navbar__container{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 0.5rem;
     padding-inline: 1rem;
+    
+    height: 3rem;
+}
+.logo__container > a{ 
+    color: whitesmoke;
 }
 .nav__list{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 1rem;
+    list-style: none;
 }
 
 .nav__link{
@@ -56,10 +63,42 @@ header{
     display: none;
 }
 
-/* Hero */
-.hero__container{
-    color: black;
+
+@media (max-width: 576px){
+    .nav__list{
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        width: 0;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+        transition: width 500ms, height 500ms;
+        gap: 1rem;
+        z-index: 1010;
+    }
+    .open-menu{
+        display: block;
+    }
+    .toggle__container{
+        display: block;
+    }
+    .toggle__icon {
+        /* outline: 2px solid red; */
+        font-size: 1.5rem;
+    }
+    .nav__list.open-menu{
+        width: 100%;
+        min-height: 50vh;
+        background-color: orangered;
+    }
 }
+
+/* Hero */
+
 .hero__content_container{
     display: flex;
     align-items: center;
@@ -101,18 +140,15 @@ header{
 
 /* About */
 
-.about__content_container{
-    min-height: calc(100vh - 6.5rem);
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 1rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.page-container{
+    position: relative;
 }
-.about__heading{
-    font-size: 3rem;
-    color: black;
+.page-scroller
+.page{
+    display: grid;
+    gap: 0.25rem;
+    grid-auto-flow: column;
 }
 /* work */
 .work__container{
