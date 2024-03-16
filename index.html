@@ -11,7 +11,8 @@
     <title>SFG WEB DESIGN</title>
 </head>
 <body>
-    <header id="top">
+    <!-- Navigation -->
+    <header>
         <div class="navbar__container">
             <div class="logo__container">
                <a href="#top">SFG WEB DESIGN</a> 
@@ -35,43 +36,113 @@
             </div>
         </div>
     </header>
-    <section class="hero__container" id="home">
+    <section class="hero__container" id="top">
         <div class="hero__content_container">
             <div class="hero__text_container">
-                <h1 class="hero__title">We are an <span>out of the box</span> design studio</h1>
-            </div>
-            <div class="hero__image_container">
-                <!-- <img class="hero__image" src="./media/hero__img.jpg" alt="hero image"> -->
+                <h1 class="hero__title">We create <span>out of the box</span> apps, branding, and websites</h1>
+                <p class="hero__subtitle">We are an award winning agency that launches companies of all sizes</p>
             </div>   
+        </div>
+        <div class="hero__image_container">
+            <img class="hero__image" src="./media/hero__img.jpg" alt="hero image">
         </div>
     </section>
     <main>
-        <section class="about__container"  id="about">
-            <div class="page-container">
-                <div class="page-scroller">
-
-                    <div class="page" id="page-1">
-                        <div class="page-elements">
-                            <img
-            src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=1200"
-            alt="">
-                        </div> 
+        <section class="clients__container">
+            <h2 class="clients__heading">Our Clients</h2>
+            <div class="client__content-container">
+                <div class="">
+                   <img src="./media/client__1.png" alt="client__1"> 
+                </div>
+                <div class="">
+                    <img src="./media/client__2.png" alt="client__2">
+                </div>
+                <div class="">
+                    <img src="./media/client__3.png" alt="client__3">
+                </div>
+                <div class="">
+                    <img src="./media/client__4.png" alt="client__4">
+                </div>
+                <div class="">
+                    <img src="./media/client__5.png" alt="client__5">
+                </div>  
+            </div>
+            
+        </section>
+        <section class="mision__container">
+            <div class="mision__content-container">
+                <h2 class="mision__title">Pursuing new limits</h2>
+                <p class="mision__subtitle">Through website design and branding, we help you strengthen your market position strategically, purposefully, and measurably.</p>
+                <div class="mision__card-container">
+                    <div class="mision__card">
+                        <h2>Branding and Strategy</h2>
+                        <p class="mission__card-text">
+                            Brand Strategy
+                        </p>
+                        <p class="mission__card-text">
+                            Brand Audit
+                        </p>
+                        <p class="mission__card-text">
+                            Naming
+                        </p>
+                        <p class="mission__card-text">
+                            Logo Design
+                        </p>
+                        <p class="mission__card-text">
+                            Visual Identity
+                        </p>
+                        <p class="mission__card-text">
+                            Graphic and Illustration
+                        </p>
                     </div>
-                    <div class="page" id="page-2">
-                        <div class="page-elements">
-                            <h2 class="">
-                                page 2
-                            </h2>
-                        </div>
-                    </div> 
-
+                    <div class="mision__card">
+                        <h2>Website and App Design</h2>
+                        <p class="mission__card-text">
+                            Website Design
+                        </p>
+                        <p class="mission__card-text">
+                            UI/UX Design
+                        </p>
+                        <p class="mission__card-text">
+                            UX Audit
+                        </p>
+                        <p class="mission__card-text">
+                            Mobile App Design
+                        </p>
+                        <p class="mission__card-text">
+                            Animation
+                        </p>
+                        <p class="mission__card-text">
+                            Design Systems
+                        </p>
+                    </div>
+                    <div class="mision__card">
+                        <h2>Website Development</h2>
+                        <p class="mission__card-text">
+                            WordPress Development
+                        </p>
+                        <p class="mission__card-text">
+                            Webflow Development
+                        </p>
+                        <p class="mission__card-text">
+                            Custom Web Development
+                        </p>
+                        <p class="mission__card-text">
+                            Conversion Rate Optimization
+                        </p>
+                        <p class="mission__card-text">
+                            SEO Strategy
+                        </p>
+                    </div>
                 </div>
             </div>
-
         </section>
-        <section class="work__container" id="work">
-            <h2 class="work__heading">Our Work</h2>
+
+        <section class="work__container-section" id="work">
+            <div class="work__container">
+               <h2 class="work__heading">Recent Work</h2>
             <div class="work__content_container">
+                
                 <div class="work__card">
                     <div class="work__card-image_container">
                         <img src="./media/work_1.jpg" alt="">
@@ -156,7 +227,9 @@
                         <a class="work__card-btn" href="#">Read More</a>
                     </div>
                 </div>
+            </div> 
             </div>
+            
         </section>
         <section class="contact__container" id="contact">
             <h2 class="contact__heading">Contact</h2>
