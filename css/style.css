@@ -550,11 +550,6 @@ footer {
     justify-content: center;
     gap: 1rem;
 }
-.footer__socials_svg{
-    width: 50px;
-    color: whitesmoke;
-    background-color: antiquewhite;
-}
 .footer__content_left{
     flex: 50%;
 }
@@ -562,7 +557,6 @@ footer {
     flex: 50%;
 }
 .footer__copyright{
-<<<<<<< HEAD
     text-align: right;
 }
 
@@ -597,10 +591,6 @@ footer {
 .color__3 {background-color: var(--accent-color-3); }
 .color__4 {background-color: var(--accent-color-4); }
 .color__5 {background-color: var(--accent-color-5); }
-=======
-    text-align: center;
-}
->>>>>>> parent of f120769 (Add Testimonial Call to action footer)
 
 .divider__container{
     display: flex;
