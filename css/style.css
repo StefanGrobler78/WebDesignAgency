@@ -543,12 +543,7 @@ footer {
     padding-inline: 1rem;
 }
 .footer__logo{
-    font-size: clamp(2rem, 4vw, 4rem);
-=======
-    justify-content: space-between;
-    align-items: center;
-    min-height: 200px;
->>>>>>> parent of f120769 (Add Testimonial Call to action footer)
+    font-size: clamp(2rem, 6vw, 6rem);
 }
 .footer__socials{
     display: flex;
@@ -606,3 +601,25 @@ footer {
     text-align: center;
 }
 >>>>>>> parent of f120769 (Add Testimonial Call to action footer)
+
+.divider__container{
+    display: flex;
+    margin: 5rem 0;
+}
+.divider__container.hero__divider{
+    margin-block: 0 0;
+}
+.divider__container.footer__divider{
+    margin-block: 5rem 0;
+}
+
+.divider__container > div {
+    flex-basis: calc(100vw / 5);
+    min-height: clamp(2rem, 10vh, 3rem); 
+}
+
+.color__1 {background-color: var(--accent-color-1); }
+.color__2 {background-color: var(--accent-color-2); }
+.color__3 {background-color: var(--accent-color-3); }
+.color__4 {background-color: var(--accent-color-4); }
+.color__5 {background-color: var(--accent-color-5); }
