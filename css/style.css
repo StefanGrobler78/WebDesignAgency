@@ -160,24 +160,27 @@ header{
     max-width: 40ch;
     margin: 0 auto;
 }
-.hero__video-container{
+
+/* video  */
+.video__section-container{
+    background-color: var(--primary-color);
+}
+.video__container{
     padding-inline: 1rem;
-    z-index: 1200;
     margin-bottom: 5rem;
 }
-.hero__video-container_thumb{
+.video__container-thumb{
     aspect-ratio: 3/2;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    background-image: url('../media/video.jpg');
+    background-image: url('../media/hero__img.jpg');
     background-size: cover;
     background-position: top center;;
     padding-inline: 2rem;
 }
-.divider__container.hero{
+.divider__container.video{
     margin-top: 0;
-    z-index: -10;
 }
 /* clients */
 
@@ -575,8 +578,9 @@ form {
     display: flex;
     margin: 5rem 0;
 }
-.divider__container.hero__divider{
-    margin-block: 0 0;
+.divider__container.video{
+    margin-top: 0;
+    margin-bottom: 5rem;
 }
 .divider__container.footer__divider{
     margin-block: 5rem 0;
