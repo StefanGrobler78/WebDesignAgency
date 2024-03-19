@@ -708,7 +708,101 @@ form {
 }
 /* footer */
 
+/* Services */
 
+/* Hero */
+
+.hero-services__section-container{
+    min-height: calc(50vh - 3rem);
+    margin-top: 3rem;
+    background-color: var(--accent-color-3);
+    padding-inline: 1rem;
+}
+.hero-services__content-container{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-height: calc(50vh - 3rem);
+    gap: 2rem;
+    margin: 0 auto;
+}
+.hero-services__title{
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: clamp(3rem, 6vw, 6rem);
+    text-align: left;
+}
+
+/* What We Do */
+
+.what-we-do__section-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    margin-bottom: 3rem;
+}
+.what-we-do__heading{
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: clamp(3rem, 6vw, 6rem);
+    margin-bottom: 1rem;
+}
+.what-we-do__subtitle{
+    margin-bottom: 1rem;
+}
+.what-we-do__image{
+    margin-bottom: 1rem;
+}
+/* Branding And Strategy */
+.what-we-do__branding-container,
+.what-we-do__website-container
+{
+    margin-bottom: 1rem;
+}
+.what-we-do__branding-title,
+.what-we-do__website-title,
+.what-we-do__development-title{
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+.what-we-do__branding_list-container,
+.what-we-do__website_list-container,
+.what-we-do__development_list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.what-we-do__branding_list > ul> li> a,
+.what-we-do__website_list > ul> li> a,
+.what-we-do__development_list > ul> li> a{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Our Approach */
+.approach__section-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+.approach__heading{
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: clamp(3rem, 6vw, 6rem); 
+    margin-bottom: 1rem;
+}
+.approach__subheading{
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    margin-bottom: 1rem;
+}
+.approach__card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.approach__card{
+    padding: 1rem;
+}
+/* Footer */
 .footer__content_container{
     display: flex;
     justify-content: flex-end;
@@ -718,6 +812,7 @@ form {
     margin: 0 auto;
     padding-inline: 1rem;
 }
+
 .footer__logo{
     font-size: clamp(2rem, 4vw, 4rem);
 }
