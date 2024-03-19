@@ -69,7 +69,7 @@ links.forEach(element => {
         }
 
         function autoSliding() {
-            deleteInterval = setInterval(timer, 5000);
+            deleteInterval = setInterval(timer, 3000);
             function timer(){
                 slideNext();
             }
