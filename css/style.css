@@ -706,7 +706,6 @@ form {
 .team__card > img {
     width: 100%;
 }
-/* footer */
 
 /* Services */
 
@@ -732,7 +731,7 @@ form {
 .hero-services__title{
     font-size: clamp(3rem, 6vw, 6rem);
     line-height: clamp(3rem, 6vw, 6rem);
-    text-align: left;
+    text-align: center;
 }
 
 /* What We Do */
